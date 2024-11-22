@@ -1,0 +1,22 @@
+{
+  "changeType": "codeExt",
+  "reference": "customer.zextsalesprice1",
+  "namespace": "apps/customer.zextsalesprice1/changes/",
+  "projectId": "customer.zextsalesprice1",
+  "moduleName": "customer/zextsalesprice1/changes/coding/BDCLaunchApp",
+  "support": {
+    "generator": "rta.service.ControllerExtension"
+  },
+  "originalLanguage": "EN",
+  "layer": "CUSTOMER_BASE",
+  "fileType": "change",
+  "fileName": "id_1730408198637_815_codeExt",
+  "content": {
+    "codeRef": "coding/BDCLaunchApp.js"
+  },
+  "texts": {},
+  "selector": {
+    "controllerName": "cus.sd.salesprices.manage.controller.Worklist"
+  },
+  "creation": "2024-10-31T20:56:38.639Z"
+}

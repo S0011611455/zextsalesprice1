@@ -1,0 +1,31 @@
+{
+  "changeType": "addXML",
+  "reference": "customer.zextsalesprice1",
+  "namespace": "apps/customer.zextsalesprice1/changes/",
+  "projectId": "customer.zextsalesprice1",
+  "packageName": "$TMP",
+  "moduleName": "customer/zextsalesprice1/changes/fragments/BDCLaunchApp.fragment.xml",
+  "support": {
+    "generator": "@sap-ux/control-property-editor",
+    "command": "addXML",
+    "sapui5Version": "1.130.0"
+  },
+  "originalLanguage": "EN",
+  "layer": "CUSTOMER_BASE",
+  "fileType": "change",
+  "fileName": "id_1730407960070_830_addXML",
+  "content": {
+    "targetAggregation": "content",
+    "index": 1,
+    "fragmentPath": "fragments/BDCLaunchApp.fragment.xml",
+    "templateName": "CUSTOM_ACTION"
+  },
+  "texts": {},
+  "selector": {
+    "id": "worklist--toolBar",
+    "idIsLocal": true
+  },
+  "dependentSelector": {},
+  "jsOnly": true,
+  "creation": "2024-10-31T20:53:24.075Z"
+}
