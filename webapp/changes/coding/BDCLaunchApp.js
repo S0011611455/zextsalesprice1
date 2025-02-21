@@ -84,21 +84,54 @@ sap.ui.define(
                 var sPath = oTable.getContextByIndex(oIndex).getPath();
                 console.log("BDCAPP");
                 if(oIndex >= 0 ) {
+                    var okopos = "01"; // get from cds
                     var oknumh = this.getView().getModel().getProperty(sPath).ConditionRecord;
-                    sap.ui.require(["sap/ushell/Container"], async function (Container) {
-                        const Navigation = await Container.getServiceAsync("Navigation");
-                        // do something with the Navigation service
-                        Navigation.navigate({
-                            target: {
-                                semanticObject: "Product",
-                                action: "launchapp1"
-                            },
-                            params: {
-                                "Travel_Id": oknumh //"102343333"
-                            }
+                    if(parseInt(okopos)) {
+                        sap.ui.require(["sap/ushell/Container"], async function (Container) {
+                            const Navigation = await Container.getServiceAsync("Navigation");
+                            // do something with the Navigation service
+                            Navigation.navigate({
+                                target: {
+                                    semanticObject: "Product",
+                                    action: "launchapp1"
+                                },
+                                params: {
+                                    "Travel_Id": oknumh ,//"102343333"
+                                    "Booking_Id": parseInt(okopos)
+                                }
+                            });
+        
+                        });        
+                    } else{
+                        sap.ui.require(["sap/ushell/Container"], async function (Container) {
+                            const Navigation = await Container.getServiceAsync("Navigation");
+                            // do something with the Navigation service
+                            Navigation.navigate({
+                                target: {
+                                    semanticObject: "Product",
+                                    action: "launchapp1"
+                                },
+                                params: {
+                                    "Travel_Id": oknumh //"102343333"
+                                }
+                            });
+        
                         });
+                    }
+                    // sap.ui.require(["sap/ushell/Container"], async function (Container) {
+                    //     const Navigation = await Container.getServiceAsync("Navigation");
+                    //     // do something with the Navigation service
+                    //     Navigation.navigate({
+                    //         target: {
+                    //             semanticObject: "Product",
+                    //             action: "launchapp1"
+                    //         },
+                    //         params: {
+                    //             "Travel_Id": oknumh //"102343333"
+                    //         }
+                    //     });
     
-                    });
+                    // });
                 }
                 
             }
